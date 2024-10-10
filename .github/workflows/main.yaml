@@ -12,3 +12,4 @@ jobs:
     steps:
       - name: taskb
         run: echo "taskb"
+      - uses: rajat430/project/.github/workflows/flow1.yml@master
