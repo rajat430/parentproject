@@ -10,4 +10,8 @@ jobs:
         with:
           repository: rajat430/parentproject
           ref: 'master'
+  jobB:
+    runs-on: ubuntu-latest
+    needs: joba
+    steps:       
       - uses: rajat430/project/.github/workflows/flow1.yml@master
