@@ -9,5 +9,6 @@ jobs:
   jobB:
     runs-on: ubuntu-latest
     needs: joba
-    steps:       
-      - uses: rajat430/project/.github/workflows/flow1.yml@master
+    steps:
+      - name: taskb
+        run: echo "taskb"
