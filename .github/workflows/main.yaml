@@ -2,4 +2,4 @@ name: "basic workflow"
 on: push
 jobs:
   joba:
-    uses: rajat430/project/.github/workflows/flow1.yml@main
+    uses: rajat430/project/.github/workflows/flow1.yml@master
