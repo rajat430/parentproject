@@ -6,3 +6,10 @@ jobs:
     steps:
       - name: task1
         run: echo "print task1"
+      - uses: actions/checkout@v3
+        with:
+          repository: project
+          ref: 'master'
+          token:  ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+      - name: task2
+        run: ls
