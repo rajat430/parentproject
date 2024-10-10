@@ -4,4 +4,4 @@ jobs:
   joba:
     runs-on: ubuntu-latest
     steps:
-      - uses: rajat430/project/.github/workflows/flow1.yml@master
+      - uses: rajat430/project/.github/workflows/flow1.yml@main
