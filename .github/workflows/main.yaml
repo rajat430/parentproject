@@ -4,12 +4,4 @@ jobs:
   joba:
     runs-on: ubuntu-latest
     steps:
-      - name: task1
-        run: echo "print task1"
-  jobB:
-    runs-on: ubuntu-latest
-    needs: joba
-    steps:
-      - name: taskb
-        run: echo "taskb"
       - uses: rajat430/project/.github/workflows/flow1.yml@master
