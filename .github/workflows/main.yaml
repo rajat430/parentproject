@@ -10,6 +10,5 @@ jobs:
         with:
           repository: rajat430/parentproject
           ref: 'master'
-          token:  ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       - name: task2
         run: ls
