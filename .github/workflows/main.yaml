@@ -8,7 +8,7 @@ jobs:
         run: echo "print task1"
       - uses: actions/checkout@v3
         with:
-          repository: project
+          repository: rajat430/parentproject/
           ref: 'master'
           token:  ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       - name: task2
