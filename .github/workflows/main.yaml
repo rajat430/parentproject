@@ -3,3 +3,7 @@ on: push
 jobs:
   joba:
     uses: rajat430/project/.github/workflows/flow1.yml@master
+  jobb:
+    needs: joba
+    uses: rajat430/childproj/.github/workflows/child1.yml@main
+    
