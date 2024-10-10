@@ -6,10 +6,6 @@ jobs:
     steps:
       - name: task1
         run: echo "print task1"
-      - uses: actions/checkout@v3
-        with:
-          repository: rajat430/parentproject
-          ref: 'master'
   jobB:
     runs-on: ubuntu-latest
     needs: joba
