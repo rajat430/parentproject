@@ -10,4 +10,4 @@ jobs:
         with:
           repository: rajat430/parentproject
           ref: 'master'
-      - uses: rajat430/project/blob/master/.github/workflows/flow1.yml@master
+      - uses: rajat430/project/.github/workflows/flow1.yml@master
