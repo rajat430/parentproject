@@ -1,15 +1,19 @@
 name: "parent workflow"
+permissions: read-all
 on:
   push:
     branches:
       - '**'
       - '!dev'
-
+      
 jobs:
   joba:
     uses: rajat430/project/.github/workflows/flow1.yml@master
   jobb:
+    permissions: read-all
     needs: joba
     uses: rajat430/childproj/.github/workflows/child1.yml@main
+    with:
+      name: "rajat"
 
 #added commentssssssss
