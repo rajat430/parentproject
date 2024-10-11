@@ -17,6 +17,7 @@ jobs:
       name: "rajat"
   jobc:
     runs-on: ubuntu-latest
+    needs: jobb
     steps:
       - name: outtaskshow
         run:  echo ${{ jobb.outputs.message}}
