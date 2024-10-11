@@ -20,6 +20,6 @@ jobs:
     needs: jobb
     steps:
       - name: outtaskshow
-        run:  echo ${{ jobb.outputs.message}}
+        run:  echo ${{ needs.jobb.outputs.message}}
 
 #added commentsssssssss
