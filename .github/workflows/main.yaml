@@ -27,5 +27,5 @@ jobs:
         with:
           ref: master
       - name: rundependencies
-        run: pip3 install -m requirements.txt
+        run: pip3 install -r requirements.txt
 #added commentssssssssss
