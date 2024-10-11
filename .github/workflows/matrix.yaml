@@ -1,0 +1,12 @@
+name: matrix
+on: push
+
+jobs:
+  matrix_job:
+    strategy:
+      matrix:
+        runner: ['ubuntu-latest','windows-latest']
+    runs-on: matrix.runner
+    steps:
+      - name: task1
+        run: echo "hello world from matrix.runner"  
