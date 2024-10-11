@@ -27,7 +27,7 @@ jobs:
       - name: outtaskshow
         run:  echo ${{ needs.jobb.outputs.message}}
   dependency_caching:
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.runner }} 
     steps:
       - uses: actions/checkout@v4
         with:
