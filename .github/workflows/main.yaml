@@ -1,10 +1,16 @@
 name: "parent workflow"
 permissions: read-all
 on:
-  push:
-    branches:
-      - '**'
-      - '!dev'
+  workflow_dispatch:
+    inputs:
+      runner:
+        required: true
+        type: choice
+        description: "this is runner name"
+        options:
+          - ubuntu-latest
+          - 'windows-latest'
+
 jobs:
   joba:
     uses: rajat430/project/.github/workflows/flow1.yml@master
