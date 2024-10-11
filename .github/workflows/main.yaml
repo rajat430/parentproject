@@ -15,5 +15,10 @@ jobs:
     uses: rajat430/childproj/.github/workflows/child1.yml@main
     with:
       name: "rajat"
+  jobc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: outtaskshow
+        run:  echo ${{ jobb.outputs.message}}
 
 #added commentsssssssss
