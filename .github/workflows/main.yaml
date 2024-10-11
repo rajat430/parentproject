@@ -2,7 +2,8 @@ name: "parent workflow"
 on:
   push:
     branches:
-      - master
+      - '!dev'
+      
 jobs:
   joba:
     uses: rajat430/project/.github/workflows/flow1.yml@master
