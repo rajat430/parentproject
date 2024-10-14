@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: non-con-task
-        run: echo "hi"
+        run: |
+          echo "hi"
+          echo ${{ GITHUB_SHA }}
+
   conc-job:
     needs: normal-job
     concurrency: 
