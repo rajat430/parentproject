@@ -10,6 +10,6 @@ jobs:
           echo "hi"
           echo ${{ github.sha }}
           $location = '${{ vars.allowedLocation }}' | convertTo-json
-          $location = $location.replace('"/','"')
+          $location = $location.replace('\"','"')
           echo $location
           echo "hello"
