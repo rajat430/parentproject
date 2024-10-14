@@ -7,7 +7,9 @@ jobs:
       - name: non-con-task
         run: echo "hi"
   conc-job:
-    concurrency: prod
+    concurrency: 
+      group: prod
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - name: task1
