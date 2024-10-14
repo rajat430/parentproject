@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: non-con-task
+        shell: pwsh
         run: |
           echo "hi"
           echo ${{ github.sha }}
-          echo ${{ vars.allowedLocation }}
+          location = ${{ vars.allowedLocation }} | convertTo-json
           echo "hello"
