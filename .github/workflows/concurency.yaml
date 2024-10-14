@@ -1,0 +1,14 @@
+name: conc
+on: push
+jobs:
+  conc-job:
+    concurrency: prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: task1
+        run: |
+          echo "hi"
+          sleep 20
+          echo "hi"
+
+#job1
