@@ -9,6 +9,7 @@ jobs:
         run: |
           echo "hi"
           echo ${{ github.sha }}
-          $location = '${{ vars.allowedLocation }}' | convertTo-json
+          $location = ${{ vars.allowedLocation }} | convertTo-json
+          $location = $location.replace('"/','"')
           echo $location
           echo "hello"
