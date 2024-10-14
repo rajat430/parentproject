@@ -7,6 +7,7 @@ jobs:
       - name: non-con-task
         run: echo "hi"
   conc-job:
+    needs: normal-job
     concurrency: 
       group: prod
       cancel-in-progress: true
