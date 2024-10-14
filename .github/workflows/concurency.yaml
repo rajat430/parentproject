@@ -9,4 +9,4 @@ jobs:
           echo "hi"
           echo ${{ github.sha }}
 
-          echo ${{allowedLocation}}
+          echo $allowedLocation
