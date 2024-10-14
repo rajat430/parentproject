@@ -8,5 +8,5 @@ jobs:
         run: |
           echo "hi"
           echo ${{ github.sha }}
-
           echo $allowedLocation
+          echo "hello"
