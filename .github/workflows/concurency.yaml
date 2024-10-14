@@ -7,7 +7,7 @@ jobs:
       - name: non-con-task
         run: |
           echo "hi"
-          echo ${{ GITHUB_SHA }}
+          echo ${{ github.sha }}
 
   conc-job:
     needs: normal-job
