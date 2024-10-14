@@ -1,6 +1,11 @@
 name: conc
 on: push
 jobs:
+  normal-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: non-con-task
+        run: echo "hi"
   conc-job:
     concurrency: prod
     runs-on: ubuntu-latest
