@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: task1
         run: |
-          echo ${{job.container.id}}
+          echo ${{job.status}}
