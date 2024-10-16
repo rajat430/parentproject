@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   job1:
-    if: ${{ contains(vars.ENV,'dev') }}
+    if: ${{ contains(vars.ENV,'stag') }}
     runs-on: ubuntu-latest
     steps:
     - name: task1
