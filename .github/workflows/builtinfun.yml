@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: task1
-      run: |
       if: contains('rajat','ra')
+      run: |
         echo "hello"
