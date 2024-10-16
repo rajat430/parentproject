@@ -1,11 +1,12 @@
 name: builtinfun
 on:
   push:
+  workflow_dispatch:
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
     - name: task1
       run: |
-      if: contains("rajat","ra")
+      if: contains('rajat','ra')
         echo "hello"
