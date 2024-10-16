@@ -28,6 +28,7 @@ jobs:
           echo "hello world"
           echo "added protection rule"
           echo "added branch protection rules"
+          echo "adding in master branch"
           echo $ENV
   build2: 
     runs-on: ubuntu-latest
