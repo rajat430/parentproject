@@ -9,3 +9,7 @@ jobs:
           echo "::debug::Set the Octocat variable"
           echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
           echo "::add-mask::Mona The Octocat"
+          echo ${{github.actor}}
+          echo ${{github.repository}}
+          echo ${{github.workflow}}
+          echo ${{github.eventname}}
