@@ -24,6 +24,7 @@ jobs:
           ENV:  ${{vars.ENV}}
         run: |
           echo "hello world"
+          echo "added protection rule"
           echo $ENV
   build2: 
     runs-on: ubuntu-latest
