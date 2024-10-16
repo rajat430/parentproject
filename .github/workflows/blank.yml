@@ -25,6 +25,7 @@ jobs:
         env: 
           ENV:  ${{vars.ENV}}
         run: |
+        if: $env == "development"
           echo "hello world"
           echo "added protection rule"
           echo "added branch protection rules"
