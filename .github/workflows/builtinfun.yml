@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   job1:
-    if: contains('rajat,'dev')
+    if: contains('rajata,'dev')
     runs-on: ubuntu-latest
     steps:
     - name: task1
