@@ -24,7 +24,7 @@ jobs:
       - name: showout
         env: 
           ENV:  ${{vars.ENV}}
-        if: $env == "development"
+        if: $ENV == "development"
         run: |
           echo "hello world"
           echo "added protection rule"
