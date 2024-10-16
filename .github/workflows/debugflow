@@ -1,0 +1,9 @@
+name: "debugflow"
+on: push
+jobs:
+  debugmsg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dbgmessage
+        run: |
+          echo "::debug::Set the Octocat variable
