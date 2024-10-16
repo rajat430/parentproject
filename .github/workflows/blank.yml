@@ -25,3 +25,6 @@ jobs:
         run: |
           echo "hello world"
           echo $ENV
+      - name: nonenvtask
+        run: |
+          echo ${{ vars.ENV }}
