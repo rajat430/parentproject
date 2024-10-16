@@ -10,3 +10,4 @@ jobs:
       if: contains(${{vars.ENV}},'dev')
       run: |
         echo "hello"
+        echo ${{vars.ENV}}
