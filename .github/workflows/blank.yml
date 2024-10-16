@@ -25,6 +25,7 @@ jobs:
         run: |
           echo "hello world"
           echo "added protection rule"
+          echo "added branch protection rule"
           echo $ENV
   build2: 
     runs-on: ubuntu-latest
