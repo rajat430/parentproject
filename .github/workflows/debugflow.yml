@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: dbgmessage
         run: |
-          echo "::debug::Set the Octocat variable
+          echo "::debug::Set the Octocat variable"
