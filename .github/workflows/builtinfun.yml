@@ -13,5 +13,7 @@ jobs:
         echo ${{vars.ENV}}
     - name: Checkout
       uses: actions/checkout@v4.2.1
+    - name: list
+      run: ls -ltr
     - name: runscript
       run: ./run.sh
