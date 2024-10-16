@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: task1
         run: |
-          echo "hello"
+          echo ${{job}}
