@@ -16,4 +16,6 @@ jobs:
     - name: list
       run: ls -ltr
     - name: runscript
-      run: ./run.sh
+      run: |
+        chmod +x run.sh
+        ./run.sh
