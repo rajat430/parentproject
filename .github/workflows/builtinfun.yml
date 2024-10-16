@@ -5,9 +5,9 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    if: contains(${{vars.ENV}},'dev')
     steps:
     - name: task1
-      if: contains(${{vars.ENV}},'dev')
       run: |
         echo "hello"
         echo ${{vars.ENV}}
