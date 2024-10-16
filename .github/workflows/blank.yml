@@ -22,4 +22,4 @@ jobs:
       - name: showout
         run: |
           echo "hello world"
-          echo $DEV_ENV
+          echo $vars.DEV_ENV
