@@ -14,4 +14,4 @@ jobs:
           echo ${{github.workflow}}
           echo ${{github.event_name}}
           echo ${{github.sha}}
-          echo ${{github.base_ref}} 
+          echo ${{github.ref}}
