@@ -20,6 +20,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: showout
+        env: 
+          DEV_ENV:  $vars.DEV_ENV
         run: |
           echo "hello world"
-          echo ${{ vars.DEV_ENV }}
+          echo $DEV_ENV
