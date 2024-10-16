@@ -1,0 +1,11 @@
+name: builtinfun
+on:
+  push:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: task1
+      run: |
+      if: contains("rajat","ra")
+        echo "hello"
