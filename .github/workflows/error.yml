@@ -16,6 +16,7 @@ jobs:
        run: echo "task after failure"
   job2:
     runs-on: ubuntu-latest
+    needs: job1
     steps:
       - name: task1
         run: echo "hello"
