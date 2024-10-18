@@ -19,7 +19,6 @@ jobs:
   job2: 
     runs-on: ubuntu-latest
     continue-on-error: true
-    needs: [job1]
     steps:
       - name: task1
         if: ${{ success()}}
