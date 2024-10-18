@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: task1
         run: echo "hello"
-      - uses: rajat430/myaction@main
+      - uses: rajat430/myaction@v1.0.0
         
 
 
