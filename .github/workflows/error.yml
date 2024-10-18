@@ -15,7 +15,7 @@ jobs:
      - name: taskafterfailure
        run: |
          echo "task after failure"
-         echo "${{steps.step2.conclusion}}
+         echo "${{steps.step2.conclusion}}"
 
 
 
