@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: task1
         run: echo "hello"
-      - uses: actions/action@main
+      - uses: actions/myaction@main
         
 
 
