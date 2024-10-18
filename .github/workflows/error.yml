@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
 jobs:
   job1: 
+    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
      - name: successtask
        run: echo "success"
      - name: failuretask
        id: step2
-       continue-on-error: true
        run: echo "failed
      - name: taskafterfailure
        run: echo "task after failure"
