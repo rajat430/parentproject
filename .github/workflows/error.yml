@@ -22,7 +22,7 @@ jobs:
     needs: [job1]
     steps:
       - name: task1
-        if: ${{ success() && jobs.job1.steps.step2.outcome == "success"}}
+        if: ${{ success()}}
         run: echo "hello"
 
 
