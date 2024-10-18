@@ -13,7 +13,7 @@ jobs:
        continue-on-error: true
        run: echo "failed
      - name: taskafterfailure
-       if: ${{failure() && steps.step2.conclusion == 'failure'}}
+       if: ${{ failure() && steps.step2.conclusion == 'failure' }}
        run: echo "task after failure"
   job2:
     runs-on: ubuntu-latest
