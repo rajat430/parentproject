@@ -13,8 +13,9 @@ jobs:
        continue-on-error: true
        run: echo "failed
      - name: taskafterfailure
-       if: ${{ failure() && steps.step2.conclusion == 'failure' }}
-       run: echo "task after failure"
+       run: |
+         echo "task after failure"
+         echo "${{steps.step2.conclusion}}
 
 
 
