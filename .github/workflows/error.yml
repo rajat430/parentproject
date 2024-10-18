@@ -15,16 +15,6 @@ jobs:
      - name: taskafterfailure
        if: ${{ failure() && steps.step2.conclusion == 'failure' }}
        run: echo "task after failure"
-  job2:
-    runs-on: ubuntu-latest
-    needs: job1
-    steps:
-      - name: task1
-        run: echo "hello"
-      - uses: rajat430/myaction@main
-      - uses: rajat430/myaction@v1.0.0
-      - uses: rajat430/myaction@v2.0.0
-        
 
 
 
