@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: task1
         run: echo "hello"
-      - uses: rajat430/myaction@0847cd506c5168845f411fe954a6e5f825a8ace9
+      - uses: rajat430/myaction@30789db3e9d6fb1e19a6e383e8e8e6951b9278f6
         
 
 
