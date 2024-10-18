@@ -1,0 +1,8 @@
+name: customaction
+on: workflow_call
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: task1
+        run: echo "composite action"
