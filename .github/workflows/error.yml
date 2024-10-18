@@ -18,6 +18,7 @@ jobs:
          echo "${{steps.step2.outcome}}"
   job2: 
     runs-on: ubuntu-latest
+    continue-on-error: true
     needs: [job1]
     steps:
       - name: task1
