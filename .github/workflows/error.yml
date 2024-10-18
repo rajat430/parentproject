@@ -20,7 +20,7 @@ jobs:
   job2: 
     runs-on: ubuntu-latest
     needs: [job1]
-    if: ${{ success() && jobs.job1.conclusion == "success"}}
+    if: ${{ success() && steps.step2.outcome == "success"}}
     steps:
       - name: task1
         run: echo "hello"
