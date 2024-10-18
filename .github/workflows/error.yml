@@ -20,19 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: task1
-        if: ${{ success()}}
         run: echo "hello"
   job3: 
     runs-on: ubuntu-latest
     steps:
       - name: task1
-        if: ${{ success()}}
         run: echo "hello"
   job4: 
       runs-on: ubuntu-latest
       steps:
         - name: task1
-          if: ${{ success()}}
           run: echo "hello"
 
 
